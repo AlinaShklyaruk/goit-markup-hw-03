@@ -16,6 +16,22 @@
   --filter-btn-text-color: #ffffff;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  color: var(--title-color);
+}
+
 h1,
 h2,
 h3,
@@ -32,23 +48,12 @@ ul {
   list-style: none;
 }
 
-button {
-  cursor: pointer;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--background-color);
-  color: var(--title-color);
-}
-
-/*
 .button {
   cursor: pointer;
 }
-*/
 
 .container {
+  outline: 1px solid red;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -57,6 +62,7 @@ body {
 }
 
 .header {
+  padding-top: 24px;
   border-bottom: 1px solid var(--horizontal-header-line);
 }
 .visually-hidden {
@@ -80,6 +86,12 @@ body {
 }
 
 */
+
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  background-color: red;
+}
 
 .link {
   text-decoration: none;
@@ -130,20 +142,22 @@ body {
 /*-------HERO-------*/
 
 .hero-section {
-  /*-----didn't create a new color in root, anyways will change it next homework------*/
+  text-align: center;
   background-color: var(--footer-background-color);
 }
 
 .hero-title {
+  padding-top: 200px;
+  margin-bottom: 40px;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--hero-text-color);
 }
 
 .hero-btn {
+  display: inline-block;
   border: 0;
   border-radius: 4px;
   padding: 10px 32px;
@@ -151,7 +165,7 @@ body {
 
   font-weight: 700;
   line-height: calc(30 / 16);
-  display: flex;
+
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -167,6 +181,7 @@ body {
 /*-------FEATURES-------*/
 
 .features-item-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -182,9 +197,14 @@ body {
   color: var(--secondary-text-color);
 }
 
+.features-list {
+  margin-top: 94px;
+}
+
 /*-------WORKS------*/
 
 .works-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -196,10 +216,12 @@ body {
 /*-----TEAM-------*/
 
 .team-section {
+  padding-top: 94px;
   background-color: var(--lightgrey-background-color);
 }
 
 .team-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -233,11 +255,21 @@ body {
 /*-------FOOTER-----*/
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--footer-background-color);
 }
 
 .address {
   font-style: normal;
+}
+
+.address-list {
+  margin-top: 20px;
+}
+
+.address-item {
+  padding-bottom: 9px;
 }
 
 .white-logo {
