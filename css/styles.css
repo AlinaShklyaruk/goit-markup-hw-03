@@ -283,14 +283,28 @@ ul {
   color: var(--title-color);
 }
 
+.team-list {
+  display: flex;
+}
+
 .team-item {
+  width: 270px;
   background: var(--background-color);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-item + .team-item {
+  margin-left: 30px;
+}
+
+.team-photo {
+  margin-bottom: 30px;
+}
+
 .team-name {
+  margin-bottom: 10px;
   font-weight: 500;
   line-height: calc(19 / 16);
   text-align: center;
@@ -299,6 +313,7 @@ ul {
 }
 
 .team-position {
+  padding-bottom: 30px;
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
@@ -322,7 +337,7 @@ ul {
 }
 
 .address-item {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .white-logo {
